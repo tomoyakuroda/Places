@@ -1,12 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {% block content%}
-    {% endblock %}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins"
+      rel="stylesheet"
+    />
+    <!-- <script src="{% static 'scripts/main.js' %}"></script> -->
+    <script src="{% static 'scripts/TweenMax.min.js' %}"></script>
+    <script src="{% static 'scripts/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'scripts/animation.gsap.js' %}"></script>
+    <title>Places</title>
+  </head>
+  <body>
+    {% block content%} {% endblock %}
+  </body>
 </html>
