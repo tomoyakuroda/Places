@@ -27,7 +27,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: start;
-  position: absolute;
+  position: fixed;
   top: 0;
   align-items: center;
   padding: 24px 0;
@@ -53,6 +53,9 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 100px;
   text-align: center;
+}
+.title h1 {
+  font-size: 100px;
 }
 .title h5 {
   font-size: 38px;
@@ -101,6 +104,7 @@ body {
   justify-content: center;
   align-items: center; */
   padding: 1em;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
@@ -142,10 +146,13 @@ figure {
 .project h3 {
   color: white;
   margin: 0;
+  font-size: 1.7rem;
 }
 
 .cta {
   margin: 0.5em 0;
+  font-size: 1.2rem;
+  padding-right: 3em;
 }
 
 .cta:after {
